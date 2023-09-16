@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "down-hosts-async-frugal"
+version = "0.1.0"
+description = "Takes a list of IPs and returns a list of down IPs via asyncronous pings. Down hosts are retried in a frugal way to rule out false negatives and minimize pings."
+authors = ["Ryan Bott <tmp8496@gmail.com>"]
+license = "BSD 3-Clause \"New\" or \"Revised\" License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+asyncping3 = "^3.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
